@@ -32,4 +32,5 @@ submitBtn.addEventListener('click', validate);
 dismissBtn.addEventListener('click', () => {
   containerStart.style.display = 'flex';
   containerEnd.style.display = 'none';
+  emailInput.value = '';
 });
