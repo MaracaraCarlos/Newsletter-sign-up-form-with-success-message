@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container_start">
+      <div class="left">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <ion-icon name="checkmark-circle" class="icon_list"></ion-icon>&nbsp Product discovery and building what matters
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle" class="icon_list"></ion-icon>&nbsp Measuring to ensure updates are a success
+          </li>
+          <li>
+            <ion-icon name="checkmark-circle" class="icon_list"></ion-icon>&nbsp And much more!
+          </li>
+        </ul>
+
+        <form>
+          <div class="container_input">
+            <label for="input_email">Email address</label>
+            <input type="email" id="input_email" placeholder="email@company.com" class="entrada">
+            <p class="error">Valid email required</p>
+          </div>
+
+          <button class="submit_btn">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+
+      <picture class="right">
+        <source
+        media="(max-width: 768px)"
+        srcset="images/illustration-sign-up-mobile.svg"/>
+        <img src="images/illustration-sign-up-desktop.svg" alt="desktop">
+      </picture>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="container_end">
+      <ion-icon name="checkmark-circle" class="icon_message"></ion-icon>
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to  <strong>ash@loremcompany.com.</strong>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="dismiss_btn">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Carlos Maracara</a>.
+    </div> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
